@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+.header {
+    background-color: #232323;
+    color: white;
+    overflow: auto;
+    border-bottom:3px solid orangered;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    top: 0;
+    width: 100%;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.titulo{
+    margin: 0;
+    float: left;
+}
+
+.navbar{
+    list-style: none;
+    float: right;  
+}
+
+li {
+    float: left;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.destaque {
+    color: orangered;
+}
+
+.banner{
+    text-align: center;
+    background-color: #dbd2d2;
+    background-image: url(imagens/banner-fundo-big.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.banner h1 {
+    margin: 0%;
+    font-size: 50px;
+    padding-top: 100px;
+    margin-top: 0px;
+}
+
+.banner h3 {
+    color: #555555;
+}
+
+.saiba-mais button {
+    border: 0px;
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-top: 30px;
+}
+
+.saiba-mais{
+    text-align: center;
+    background-color: #232323;
+    height: 90px;
+}
+
+.box img {
+    height: 100px;
+}
+
+.box {
+    overflow: auto;
+}
+
+
+.box-item {
+    float: left;
+    text-align: center;
+    width: 27%;
+    padding: 3%;
+}
+
+.footer {
+    text-align: center;
+    background-color: orangered;
+    height: 90px;
+    
+}
+
+.footer h4 {
+    margin: 0px;
+    padding-top: 40px;
+    font-weight: 100;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover{
+    color: orangered;
+}
+
+.navbar a:target {
+    background-color: green;
+}
+
+.historia {
+    height: 516px;
+    background-image: url(https://images.pexels.com/photos/1007025/pexels-photo-1007025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.historia h1 {
+    font-size: 50px;
+    color: orangered;
+    margin-top: 0px;
+    padding-top: 100px;
+}
+
+.historia h3 {
+    color: #555555;
+}
+
+.texto-historia {
+    text-align: center;
+    text-justify: inter-word;
+}
+
+.criadores {
+    margin-top: 20px;
+}
+
+.criadores img {
+    height: 300px;
+}
+
+.ceo {
+    float: right;
+    margin-right: 370px;
+    margin-top: 20px;
+}
+
+.ceo h2 {
+    margin-right:350px;
+}
+
+.ceo p {
+    width: 400px;
+    margin-top: 30px;
+}
+
+.time {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #232323;
+    height: 90px;
+}
+
+.time button {
+    border: 0px;
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-top: 30px;
+}
+
+.funcionarios {
+    float: left;
+    text-align: center;
+    width: 27%;
+    padding: 3%;
+}
+
+.depoimentos {
+    height: 500px;
+}
+
+.depoimento1 {
+    float: left;
+    text-align: center;
+    width: 27%;
+    padding: 3%;
+}
