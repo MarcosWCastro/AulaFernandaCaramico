@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartJS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js"></script>
+    <link rel="stylesheet" href="Graphics2.css">
+
+</head>
+
+<style>
+    body {
+    align-items: center;
+    text-align: center;
+}
+
+.myGraphic {
+    width: 40%;
+    margin: auto;
+}
+
+canvas {
+    background-color: whitesmoke;
+}
+</style>
+
+<body>
+
+    <h1>Torcida de times de futebol</h1>
+
+    <div class="myGraphic">
+        <canvas id="myChart"></canvas>
+    </div>
+   
+</body>
+
+</html>
+
+<script>
+
+    var ctx = document.getElementById('myChart');
+
+    var meuGrafico = new Chart(ctx, {
+        type: 'pie',
+
+        data: {
+            labels: ["Corinthians", "Palmeiras", "Inter", "Cruzeiro", "Mirassol"],
+            datasets: [    
+            {
+                data: [33, 24, 20, 16, 7],
+                borderWidth: 2,
+                borderColor: '#ffffff',
+                backgroundColor: ['#9d9d9d','#12a731','#e82920','#1618d0','#dad017'],
+            },
+
+            ]
+        },
+        
+    })
+
+</script>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartJS</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href="Graphics.css">
+
+</head>
+
+<style>
+    body {
+    align-items: center;
+}
+
+.myGraphic {
+    width: 60%;
+    margin: auto;
+}
+
+canvas {
+    background-color: whitesmoke;
+}
+
+.mySecondGraphic {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+</style>
+
+<body>
+
+    <div class="myGraphic">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <div class="mySecondGraphic">
+        <canvas id="myChart2"></canvas>
+    </div>
+   
+</body>
+
+</html>
+
+<script>
+
+    var ctx = document.getElementById('myChart');
+
+    var meuGrafico = new Chart(ctx, {
+        type: 'line',
+
+        data: {
+            labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+            datasets: [    
+            {
+                label: "Estados Unidos",
+                data: [150, 270, 414, 315, 610, 780, 1020, 1270, 1450, 1700, 1510, 1350],
+                borderWidth: 2,
+                borderColor: '#ff1908',
+                backgroundColor: 'transparent',
+            },
+
+            {
+                type: 'line',
+                label: "Brasil",
+                data: [370, 210, 90, 280, 410, 750, 1050, 1320, 1670, 1415, 1720, 1800],
+                borderWidth: 2,
+                borderColor: '#008000',
+                backgroundColor: 'transparent'
+            },
+
+
+            {
+                type: 'line',
+                label: "Argentina",
+                data: [170, 310, 190, 260, 430, 550, 1100, 1210, 890, 915, 1120, 910],
+                borderWidth: 2,
+                borderColor: '#006c80',
+                backgroundColor: 'transparent'
+            },
+            ]
+        },
+        
+        options: {
+            
+            title: {
+                display: true,
+                fontSize: 20,
+                text: "Mortes diárias por Covid-19",
+                position: 'top',
+            },
+            legend: {
+                display: true,
+                reverse: true,
+                position: 'bottom'
+            },
+            layout: {
+            padding: {
+                left: 50,
+                top: 50
+            },
+           
+        }
+        }
+    })
+
+
+    var ctx = document.getElementById('myChart2');
+
+    var meuGrafico = new Chart(ctx, {
+        type: 'bar',
+
+        data: {
+            labels: ["16-25 anos", "26-35 anos", "36-45 anos", "46-55 anos", "56-65 anos"],
+            datasets: [    
+            {
+                label: "Java",
+                data: [137, 98, 114, 215, 310],
+                borderWidth: 2,
+                backgroundColor: '#ff1908'
+            },
+
+            {
+                type: 'bar',
+                label: "Python",
+                data: [270, 210, 90, 280, 210],
+                borderWidth: 2,
+                backgroundColor: '#ffeb0b'
+            },
+
+
+            {
+                type: 'bar',
+                label: "C++",
+                data: [170, 256, 190, 260, 117],
+                borderWidth: 2,
+                backgroundColor: '#006c80'
+            },
+
+
+            {
+                type: 'bar',
+                label: "Swift",
+                data: [90, 86, 113, 99, 74],
+                borderWidth: 2,
+                backgroundColor: '#ff791f'
+            },
+
+            ]
+        },
+        
+        options: {
+            
+            title: {
+                display: true,
+                fontSize: 20,
+                text: "Linguagens preferidas dos desenvolvedores",
+                position: 'top',
+            },
+            legend: {
+                display: true,
+                position: 'bottom'
+            },
+            layout: {
+            padding: {
+                left: 50,
+                top: 50
+            },
+           
+        }
+        }
+    })
+
+    Chart.defaults.global.defaultFontColor = "#4b4b4b";
+</script>
